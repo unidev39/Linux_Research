@@ -1,7 +1,6 @@
 #!/bin/ksh
 
 #########################################################################################
-# Copyright (c) 2017 LIS Nepal its affiliates. All rights reserved. 
 # File     : inotify_wait.ksh
 # Purpose  : Run the script if the specified event Triggered  
 # Usage    : ./triggering_script.ksh
