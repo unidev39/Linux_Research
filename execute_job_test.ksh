@@ -1,16 +1,12 @@
 #!/bin/ksh
 
 ##################################################################
-# Copyright 2014 Verisk Health, ALL RIGHTS RESERVED
 # File     : move_execute_job_test.ksh
 # Purpose  : Create the trigger to run the script if the file is created in the directory
-# Usage    : ./execute_job_test.ksh <<meg.prm>>
+# Usage    : ./execute_job_test.ksh
 # Author   : Devesh Kumar Shrivastav
 # Date     : Augst 31, 2017
 # Revision : 1.0
-# $Workfile:   slsiltsde.ksh  $
-# $Revision: /main/1 $
-# $Modtime :    $
 ###################################################################
 
 ################BOF This is part of the ra_profile#################
@@ -29,8 +25,6 @@ do
       echo "Pass => $FILENAME"
    fi
 done
-
-
 
 ####################################################################
 #                       End of Script                              #
