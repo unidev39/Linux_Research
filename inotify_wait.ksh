@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #########################################################################################
-# Copyright (c) 2017 LIS Nepal its affiliates. All rights reserved. 
 # File     : inotify_wait.ksh
 # Purpose  : Create the trigger to run the script if the file is created under the specified directory
 # Usage    : ./inotify_wait.ksh &
