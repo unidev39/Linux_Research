@@ -33,7 +33,7 @@ file_write_status()
 {
 lsofresult=`lsof | grep $1 | wc -l`
 while [ $lsofresult != 0 ]; do 
-  sleep 5
+  sleep 5s
   lsofresult=`lsof | grep $1 | wc -l`
 done;
 }
