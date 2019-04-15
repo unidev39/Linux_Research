@@ -18,11 +18,11 @@
 # Path for the file will be created
 path=/home/ftptest/BackUp
 
-# List of all 30 days old files 
-listoffiles=`ls |grep $(date -d "-32 days" +"m1remitprod_backup_%Y_%m_")`
-
 # To Enter source file path   
 cd $path
+
+# List of all 30 days old files 
+listoffiles=`ls |grep $(date -d "-32 days" +"m1remitprod_backup_%Y_%m_")`
 
 # Single file name that holds the date formats  
 filenamelike=`ls |grep $(date -d "-32 days" +"m1remitprod_backup_%Y_%m_%d_")`
