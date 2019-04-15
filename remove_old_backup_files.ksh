@@ -21,11 +21,12 @@ path=/home/ftptest/BackUp
 # List of all 30 days old files 
 listoffiles=`ls |grep $(date -d "-32 days" +"m1remitprod_backup_%Y_%m_")`
 
+# To Enter source file path   
+cd $path
+
 # Single file name that holds the date formats  
 filenamelike=`ls |grep $(date -d "-32 days" +"m1remitprod_backup_%Y_%m_%d_")`
 filenamelessthan=$(date -d "-32 days" +"m1remitprod_backup_%Y_%m_%d_")
-# To Enter source file path   
-cd $path
 
 # Process to identify and remove the old files
 for file in $listoffiles; do
