@@ -43,5 +43,5 @@ execute=`expect -c "
 
 # List of all 5 days old files 
 source_filename=`echo ${source_filename} |  sed 's/_.*//'`
-find ${source_path} -name "${source_filename}" -type f -mtime +5 -exec rm -f {} \;
+find ${source_path} -name "${source_filename}*.txt" -type f -mtime +5 -exec rm -f {} \;
 ########################BOF This is part of the scp_extract#########################
