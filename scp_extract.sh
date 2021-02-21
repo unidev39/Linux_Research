@@ -33,9 +33,9 @@ dest_password=$6
 
 execute=`expect -c "
                     set timeout 1
-                    spawn scp -r ${source_path}/${source_filename} ${dest_user}@${dest_ip}:${dest_path}/
+                    eval spawn scp -r ${source_path}/${source_filename} ${dest_user}@${dest_ip}:${dest_path}/
                     expect yes/no { send yes\r ; exp_continue }
-                    expect password: { send ${dest_password}\r }
+                    expect $assword: { send ${dest_password}\r }
                     expect 100%
                     sleep 1
                     exit
