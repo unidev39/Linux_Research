@@ -4,7 +4,7 @@ set -e
 ######################################################################################################
 # Credit Information Bureau Nepal Limited its affiliates. All rights reserved.
 # File          : dump_extract.sh
-# Purpose       : To import the Remote file in Linux
+# Purpose       : To import the Remote file With Parameters in Linux
 # Usage         : ./dump_extract.sh &
 # Created By    : Devesh Kumar Shrivastav
 # Created Date  : Feb 21, 2021
