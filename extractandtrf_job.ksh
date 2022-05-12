@@ -67,7 +67,7 @@ BEGIN
                        a.sn_no||''|''||a.created_date||''|''||a.name||''|''||a.father_name||''|''||a.f_type composit_columns
                   FROM tbl_extractandtrf a
                   ORDER BY
-                       a.blacklist_no';
+                       a.sn_no';
           OPEN l_cursor_cr FOR l_sql;
             LOOP
                FETCH l_cursor_cr INTO l_composit_columns;
